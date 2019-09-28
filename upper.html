@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+  <script>
+    function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
+
+    function upper()
+    {
+     var uc = document.getElementById('input1').value;
+     document.getElementById('input1').value = uc.toUpperCase();
+   }
+
+   function sort()
+   {
+	var textarea = document.getElementById("input1"); // or whatever...
+	textarea.value = textarea.value.split("\n").sort().join("\n");
+}
+function reverse()
+{
+	var textarea = document.getElementById("input1"); // or whatever...
+	
+	textarea.value = textarea.value.split("\n").reverse("\n").join("\n");
+	
+}
+
+
+function addNum()
+{
+	var textarea = document.getElementById("input1"); // or whatever...
+	
+	textarea.value = textarea.value.split('\n').map((line, index) => `${index + 1}. ${line}`).join('\n')
+	
+}
+function cl()
+{
+	document.getElementById('input1').value = '';
+}
+
+function lw()
+{
+	var lc = document.getElementById('input1').value;
+	document.getElementById('input1').value = lc.toLowerCase();
+	
+}
+function sb()
+{
+  var textarea = document.getElementById("input1").value; 
+  textarea = textarea.replace(/\s\s*$/gm, "").trimStart();
+  document.getElementById("input1").value = textarea;
+  
+}
+function sfl()
+{
+  var numbers = document.getElementById("input1").value.split("\n");
+var shuffledNumbers = shuffle(numbers).join("\n");
+
+ document.getElementById("input1").value = shuffledNumbers;
+
+}
+
+
+
+
+</script>
+</head>
+<body>
+  <form action="demo_form.asp" id="demo_form">
+
+   <textarea id="input1" rows = "5" cols = "60" name = "description"> </textarea>
+
+ </textarea>
+ <!-- <input type="text" id="input1" name="changeCase" placeholder="Put Phrase Here"> -->
+ <br>
+
+ <input type="button" id="btn3" value="Clear It" onclick="cl();">
+ <input type="button" id="btn1" value="Capatalize" onclick="upper();" ondblclick="lw();">
+ <input type="button" id="btn2" value="LowerCase" onclick="lw();">
+ <input type="button" id="btn2" value="Sort" onclick="sort();">
+ <input type="button" id="btn2" value="Eeverse" onclick="reverse();">
+ <input type="button" id="btn2" value="Add Numbers" onclick="addNum();">
+ <input type="button" id="btn2" value="Shuffle" onclick="sfl();">
+ <input type="button" id="btn2" value="Strip Blank" onclick="sb();">
+
+
+
+</form>
+</body>
+</html>

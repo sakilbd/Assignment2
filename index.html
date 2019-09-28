@@ -1,0 +1,82 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script language="JavaScript">
+		var quotes=["Nothing is as easy as it looks.","Anything that can go wrong will go wrong.", "Live as if you were to die tomorrow. Learn as if you were to live forever.","That which does not kill us makes us stronger.","Do what you can, with what you have, where you are.","Be yourself; everyone else is already taken."];
+
+
+
+
+
+
+
+
+		function btn1() {
+			document.getElementById("button2").style.color = "#b30089";
+			document.getElementById("button2").style.background = "pink";
+			document.getElementById("button2").style.borderColor = "red";
+			document.getElementById('button2').style.fontSize='32px';
+			document.getElementById("button2").style.fontFamily = "Impact,Charcoal,sans-serif";
+			var rN = Math.floor(Math.random() * (quotes.length));
+			document.getElementById("button2").innerHTML = quotes[rN];
+		}
+		function btn2() {
+			document.getElementById("button2").style.color = "pink";
+			document.getElementById("button2").style.background = "green";
+			document.getElementById("button2").style.borderColor = "black";
+			document.getElementById('button2').style.fontSize='30px' ;
+			document.getElementById("button2").style.fontFamily = "Trebuchet MS, Helvetica, sans-serif";
+			var rN = Math.floor(Math.random() * (quotes.length));
+			document.getElementById("button2").innerHTML = quotes[rN];
+		}
+		function btn3() {
+			document.getElementById("button2").style.color = "#1a1aff";
+			document.getElementById("button2").style.background = "#00ffff";
+			document.getElementById("button2").style.borderColor = "#ffb3c6";
+			document.getElementById('button2').style.fontSize='36px' ;
+			document.getElementById("button2").style.fontFamily = "Lucida Sans Unicode, Lucida Grande, sans-serif";
+			var rN = Math.floor(Math.random() * (quotes.length));
+			document.getElementById("button2").innerHTML = quotes[rN];
+		}
+		function btn4() {
+			document.getElementById("button2").style.color = "#e6e600";
+			document.getElementById("button2").style.background = "#8080ff";
+			document.getElementById("button2").style.borderColor = "#ffff80";
+			document.getElementById('button2').style.fontSize='28';
+			document.getElementById("button2").style.fontFamily = "Times New Roman , Times, serif";
+			var rN = Math.floor(Math.random() * (quotes.length));
+			document.getElementById("button2").innerHTML = quotes[rN];
+		}
+		
+
+
+
+	</script>
+
+</head>
+
+<body >
+	<div>]
+		<h1>
+			<a href="try.html">1.2 Hero Converter</a>
+			<br>
+			<a href="upper.html">Part3-Magic</a>
+			<br>
+			<a href="part2.html">Part2-Max Min Avg</a>
+
+
+		</h1>
+	</div>
+
+
+	<button class="red" id="button2" onclick=""/>hah</button>
+	<button class="squre" id="button2" onclick="btn1();"/>Red</button>
+	<button class="green" id="button2" onclick="btn2();"/>Green</button>
+	<button class="sky" id="button2" onclick="btn3();"/>sky</button>
+	<button class="yellow" id="button2" onclick="btn4();"/>yellow</button>
+	
+	
+
+</body>
+</html>

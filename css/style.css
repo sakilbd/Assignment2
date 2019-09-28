@@ -1,0 +1,33 @@
+*{
+	margin : 0;
+	padding : 0;
+	font-family : Century Gothic;
+
+	
+}
+
+.red{
+	background-color: red;
+	height: 50px;
+	width: 100%;
+}
+.squre{
+	background-color: red;
+	height: 50px;
+	width: 50px;
+}
+.green{
+	background-color: green;
+	height: 50px;
+	width: 50px;
+}
+.yellow{
+	background-color: yellow;
+	height: 50px;
+	width: 50px;
+}
+.sky{
+	background-color: #00ffff;
+	height: 50px;
+	width: 50px;
+}
